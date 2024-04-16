@@ -4,7 +4,6 @@ import { useState } from 'react'
 import { useContext } from 'react';
 import { AuthContext } from '../../context/AuthContext';
 import axios from 'axios';
-import Text from './text';
 
 
 export default function Write() {
@@ -76,7 +75,7 @@ export default function Write() {
                 <textarea name="disc" value={disc} onChange={(e) => setDisc(e.target.value)} className='disc' placeholder="Blog Contant ...."></textarea>
                 <input type="submit" value="Publish" className='writesubmit' />
             </form>
-            <Text/>
+            {/* <Text/> */}
         </div>
     )
 }
